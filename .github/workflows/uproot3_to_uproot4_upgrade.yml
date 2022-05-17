@@ -1,0 +1,21 @@
+---
+on:
+  push:
+    paths:
+      - "uproot3_to_uproot4_upgrade/**"
+      - ".github/workflows/uproot3_to_uproot4_upgrade.yml"
+
+jobs:
+  uproot3-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout repo"
+        uses: actions/checkout@v2
+      # - name: "Set up environment"
+  uproot4-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout repo"
+        uses: actions/checkout@v2
+      # - name: "Set up environment"
+        
